@@ -1,0 +1,149 @@
+2026-05-13 19:13:51,372 - INFO - Total data size is : (7043, 22)
+2026-05-13 19:13:51,378 - INFO - Null values  : 
+ : customerID           0
+gender               0
+SeniorCitizen        0
+Partner              0
+Dependents           0
+tenure               0
+PhoneService         0
+MultipleLines        0
+InternetService      0
+OnlineSecurity       0
+OnlineBackup         0
+DeviceProtection     0
+TechSupport          0
+StreamingTV          0
+StreamingMovies      0
+Contract             0
+PaperlessBilling     0
+PaymentMethod        0
+MonthlyCharges       0
+TotalCharges        11
+Churn                0
+Provider             0
+dtype: int64
+2026-05-13 19:13:51,389 - INFO - Train data size : 5634 : 5634 
+: Total train data: (5634, 21)
+2026-05-13 19:13:51,389 - INFO - Test data size : 1409 : 1409 
+: Total test data: (1409, 21)
+2026-05-13 19:13:51,391 - INFO - Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges'], dtype='str') : (5634, 4)
+2026-05-13 19:13:51,391 - INFO - Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges'], dtype='str') : (1409, 4)
+2026-05-13 19:13:51,392 - INFO - Index(['customerID', 'gender', 'Partner', 'Dependents', 'PhoneService',
+       'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup',
+       'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies',
+       'Contract', 'PaperlessBilling', 'PaymentMethod', 'Provider'],
+      dtype='str') : (5634, 17)
+2026-05-13 19:13:51,392 - INFO - Index(['customerID', 'gender', 'Partner', 'Dependents', 'PhoneService',
+       'MultipleLines', 'InternetService', 'OnlineSecurity', 'OnlineBackup',
+       'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies',
+       'Contract', 'PaperlessBilling', 'PaymentMethod', 'Provider'],
+      dtype='str') : (1409, 17)
+2026-05-13 19:13:51,392 - INFO - Before train column names : Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges'], dtype='str')
+2026-05-13 19:13:51,392 - INFO - Before test column names : Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges'], dtype='str')
+2026-05-13 19:13:51,463 - INFO - Error in Line no 67 due to : cannot unpack non-iterable NoneType object
+2026-05-13 19:13:51,510 - INFO - ============================================================================
+2026-05-13 19:13:51,510 - INFO - Final Training data : (5634, 33)
+2026-05-13 19:13:51,510 - INFO - Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges',
+       'SeniorCitizen_yeo', 'customerID', 'gender_Male', 'Partner_Yes',
+       'Dependents_Yes', 'PhoneService_Yes', 'MultipleLines_No phone service',
+       'MultipleLines_Yes', 'InternetService_Fiber optic',
+       'InternetService_No', 'OnlineSecurity_No internet service',
+       'OnlineSecurity_Yes', 'OnlineBackup_No internet service',
+       'OnlineBackup_Yes', 'DeviceProtection_No internet service',
+       'DeviceProtection_Yes', 'TechSupport_No internet service',
+       'TechSupport_Yes', 'StreamingTV_No internet service', 'StreamingTV_Yes',
+       'StreamingMovies_No internet service', 'StreamingMovies_Yes',
+       'PaperlessBilling_Yes', 'PaymentMethod_Credit card (automatic)',
+       'PaymentMethod_Electronic check', 'PaymentMethod_Mailed check',
+       'Provider_BSNL', 'Provider_Jio', 'Provider_VI'],
+      dtype='str')
+2026-05-13 19:13:51,511 - INFO - SeniorCitizen                             0
+tenure                                    0
+MonthlyCharges                            0
+TotalCharges                             10
+SeniorCitizen_yeo                         0
+customerID                                0
+gender_Male                               0
+Partner_Yes                               0
+Dependents_Yes                            0
+PhoneService_Yes                          0
+MultipleLines_No phone service            0
+MultipleLines_Yes                         0
+InternetService_Fiber optic               0
+InternetService_No                        0
+OnlineSecurity_No internet service        0
+OnlineSecurity_Yes                        0
+OnlineBackup_No internet service          0
+OnlineBackup_Yes                          0
+DeviceProtection_No internet service      0
+DeviceProtection_Yes                      0
+TechSupport_No internet service           0
+TechSupport_Yes                           0
+StreamingTV_No internet service           0
+StreamingTV_Yes                           0
+StreamingMovies_No internet service       0
+StreamingMovies_Yes                       0
+PaperlessBilling_Yes                      0
+PaymentMethod_Credit card (automatic)     0
+PaymentMethod_Electronic check            0
+PaymentMethod_Mailed check                0
+Provider_BSNL                             0
+Provider_Jio                              0
+Provider_VI                               0
+dtype: int64
+2026-05-13 19:13:51,512 - INFO - Final Testing data : (1409, 33)
+2026-05-13 19:13:51,512 - INFO - Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges',
+       'SeniorCitizen_yeo', 'gender_Male', 'Partner_Yes', 'Dependents_Yes',
+       'PhoneService_Yes', 'MultipleLines_No phone service',
+       'MultipleLines_Yes', 'InternetService_Fiber optic',
+       'InternetService_No', 'OnlineSecurity_No internet service',
+       'OnlineSecurity_Yes', 'OnlineBackup_No internet service',
+       'OnlineBackup_Yes', 'DeviceProtection_No internet service',
+       'DeviceProtection_Yes', 'TechSupport_No internet service',
+       'TechSupport_Yes', 'StreamingTV_No internet service', 'StreamingTV_Yes',
+       'StreamingMovies_No internet service', 'StreamingMovies_Yes',
+       'PaperlessBilling_Yes', 'PaymentMethod_Credit card (automatic)',
+       'PaymentMethod_Electronic check', 'PaymentMethod_Mailed check',
+       'Provider_BSNL', 'Provider_Jio', 'Provider_VI', 'Contract_od'],
+      dtype='str')
+2026-05-13 19:13:51,513 - INFO - SeniorCitizen                            0
+tenure                                   0
+MonthlyCharges                           0
+TotalCharges                             1
+SeniorCitizen_yeo                        0
+gender_Male                              0
+Partner_Yes                              0
+Dependents_Yes                           0
+PhoneService_Yes                         0
+MultipleLines_No phone service           0
+MultipleLines_Yes                        0
+InternetService_Fiber optic              0
+InternetService_No                       0
+OnlineSecurity_No internet service       0
+OnlineSecurity_Yes                       0
+OnlineBackup_No internet service         0
+OnlineBackup_Yes                         0
+DeviceProtection_No internet service     0
+DeviceProtection_Yes                     0
+TechSupport_No internet service          0
+TechSupport_Yes                          0
+StreamingTV_No internet service          0
+StreamingTV_Yes                          0
+StreamingMovies_No internet service      0
+StreamingMovies_Yes                      0
+PaperlessBilling_Yes                     0
+PaymentMethod_Credit card (automatic)    0
+PaymentMethod_Electronic check           0
+PaymentMethod_Mailed check               0
+Provider_BSNL                            0
+Provider_Jio                             0
+Provider_VI                              0
+Contract_od                              0
+dtype: int64
+2026-05-13 19:13:51,513 - INFO - Number of Rows for Good customer 1 : 1496
+2026-05-13 19:13:51,514 - INFO - Number of Rows for Bad customer 0 : 4138
+2026-05-13 19:13:51,514 - INFO - Training data size : (5634, 32)
+2026-05-13 19:13:54,798 - INFO - Number of Rows for Good customer 1 : 4138
+2026-05-13 19:13:54,798 - INFO - Number of Rows for Bad customer 0 : 4138
+2026-05-13 19:13:54,798 - INFO - Training data size : (8276, 32)

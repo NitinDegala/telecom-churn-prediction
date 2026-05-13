@@ -1,0 +1,12 @@
+2026-05-13 19:13:51,392 - INFO - Before train column names : Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges'], dtype='str')
+2026-05-13 19:13:51,392 - INFO - Before test column names : Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges'], dtype='str')
+2026-05-13 19:13:51,460 - ERROR - Yeo-Johnson input must be finite.
+Traceback (most recent call last):
+  File "C:\Users\hp\Downloads\churn_prediction_project\var_out.py", line 20, in vt_outliers
+    X_train_num[i+'_yeo'],lam_value = yeojohnson(X_train_num[i])
+                                      ~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\Downloads\churn_prediction_project\.venv\Lib\site-packages\scipy\stats\_morestats.py", line 1672, in yeojohnson
+    lmax = yeojohnson_normmax(x)
+  File "C:\Users\hp\Downloads\churn_prediction_project\.venv\Lib\site-packages\scipy\stats\_morestats.py", line 1898, in yeojohnson_normmax
+    raise ValueError('Yeo-Johnson input must be finite.')
+ValueError: Yeo-Johnson input must be finite.

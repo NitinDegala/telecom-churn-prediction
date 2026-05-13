@@ -1,0 +1,13 @@
+2026-05-13 19:13:51,464 - INFO - Before Train columns  : (5634, 5) 
+ : Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges',
+       'SeniorCitizen_yeo'],
+      dtype='str')
+2026-05-13 19:13:51,464 - INFO - Before Test columns  : (1409, 5) 
+ : Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges',
+       'SeniorCitizen_yeo'],
+      dtype='str')
+2026-05-13 19:13:51,466 - INFO - Number of good columns : 5 : Index(['SeniorCitizen', 'tenure', 'MonthlyCharges', 'TotalCharges',
+       'SeniorCitizen_yeo'],
+      dtype='str')
+2026-05-13 19:13:51,466 - INFO - Number of bad columns : 0 : Index([], dtype='str')
+2026-05-13 19:13:51,467 - INFO - Error in Line no 24 due to : "['SeniorCitizen_trim'] not found in axis"

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Model Prediction</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background: #f8f8f8; }
+        h1 { color: #333; }
+        form { background: #fff; padding: 20px; border-radius: 10px; width: 400px; }
+        label { display: block; margin-top: 10px; font-weight: bold; }
+        input { width: 100%; padding: 6px; margin-top: 4px; }
+        button { margin-top: 15px; padding: 10px; background: #007bff; color: #fff; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #0056b3; }
+        .result { margin-top: 20px; font-size: 18px; color: green; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Model Prediction</h1>
+    <form method="post">
+        <label>SeniorCitizen</label>
+        <input type="number" step="any" name="SeniorCitizen" required>
+
+        <label>tenure</label>
+        <input type="number" step="any" name="tenure" required>
+
+        <label>MonthlyCharges</label>
+        <input type="number" step="any" name="MonthlyCharges" required>
+
+        <label>TotalCharges</label>
+        <input type="number" step="any" name="TotalCharges" required>
+
+        <label>SeniorCitizen_yeo</label>
+        <input type="number" step="any" name="SeniorCitizen_yeo" required>
+
+        <label>gender_Male</label>
+        <input type="number" step="any" name="gender_Male" required>
+
+        <label>Dependents_Yes</label>
+        <input type="number" name="Dependents_Yes" required>
+
+        <label>PhoneService_Yes</label>
+        <input type="number" name="PhoneService_Yes" required>
+
+        <label>MultipleLines_No phone service</label>
+        <input type="number" name="MultipleLines_No phone service" required>
+
+        <label>MultipleLines_Yes</label>
+        <input type="number" name="MultipleLines_Yes" required>
+
+        <label>InternetService_Fiber optic</label>
+        <input type="number" name="InternetService_Fiber optic" required>
+
+        <label>InternetService_No</label>
+        <input type="number" step="any" name="InternetService_No" required>
+
+        <label>OnlineSecurity_No internet service</label>
+        <input type="number" step="any" name="OnlineSecurity_No internet service" required>
+
+        <label>OnlineSecurity_Yes</label>
+        <input type="number" step="any" name="OnlineSecurity_Yes" required>
+
+        <label>OnlineBackup_No internet service</label>
+        <input type="number" step="any" name="OnlineBackup_No internet service" required>
+
+        <label>OnlineBackup_Yes</label>
+        <input type="number" step="any" name="OnlineBackup_Yes" required>
+
+        <label>DeviceProtection_No internet service</label>
+        <input type="number" step="any" name="DeviceProtection_No internet service" required>
+
+        <label>DeviceProtection_Yes</label>
+        <input type="number" step="any" name="DeviceProtection_Yes" required>
+
+        <label>TechSupport_No internet service</label>
+        <input type="number" step="any" name="TechSupport_No internet service" required>
+
+        <label>TechSupport_Yes</label>
+        <input type="number" step="any" name="TechSupport_Yes" required>
+
+        <label>StreamingTV_No internet service</label>
+        <input type="number" step="any" name="StreamingTV_No internet service" required>
+
+        <label>StreamingTV_Yes</label>
+        <input type="number" step="any" name="StreamingTV_Yes" required>
+
+        <label>StreamingMovies_No internet service</label>
+        <input type="number" step="any" name="StreamingMovies_No internet service" required>
+
+        <label>StreamingMovies_Yes</label>
+        <input type="number" step="any" name="StreamingMovies_Yes" required>
+
+        <label>PaperlessBilling_Yes</label>
+        <input type="number" step="any" name="PaperlessBilling_Yes" required>
+
+        <label>PaymentMethod_Credit card (automatic)</label>
+        <input type="number" step="any" name="PaymentMethod_Credit card (automatic)" required>
+
+        <label>PaymentMethod_Electronic check</label>
+        <input type="number" step="any" name="PaymentMethod_Electronic check" required>
+
+        <label>PaymentMethod_Mailed check</label>
+        <input type="number" step="any" name="PaymentMethod_Mailed check" required>
+
+        <label>Provider_BSNL</label>
+        <input type="number" step="any" name="Provider_BSNL" required>
+
+        <label>Provider_Jio</label>
+        <input type="number" step="any" name="Provider_Jio" required>
+
+        <label>Provider_VI</label>
+        <input type="number" step="any" name="Provider_VI" required>
+
+        <label>Contract_od</label>
+        <input type="number" step="any" name="Contract_od" required>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction is not none %}
+        <div class="result">Prediction: {{ prediction }}</div>
+    {% endif %}
+</body>
+</html>
